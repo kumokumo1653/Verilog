@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Dec 03 16:24:19 2020
+# Process ID: 11836
+# Log file: C:/Users/fjsda/Studying/FPGA/FullAddSub/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/fjsda/Studying/FPGA/FullAddSub/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/fjsda/Studying/FPGA/FullAddSub/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list A]]
+set_property iostandard LVCMOS33 [get_ports [list B]]
+set_property iostandard LVCMOS33 [get_ports [list C]]
+set_property iostandard LVCMOS33 [get_ports [list D]]
+set_property iostandard LVCMOS25 [get_ports [list O1]]
+set_property iostandard LVCMOS33 [get_ports [list O2]]
+set_property iostandard LVCMOS33 [get_ports [list O1]]
+set_property package_pin "" [get_ports [list  A]]
+set_property package_pin "" [get_ports [list  D]]
+set_property package_pin "" [get_ports [list  A]]
+startgroup
+set_property package_pin P98 [get_ports A]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports B]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports C]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports D]
+endgroup
+startgroup
+set_property package_pin P121 [get_ports O1]
+endgroup
+startgroup
+set_property package_pin P114 [get_ports O2]
+endgroup
+save_constraints

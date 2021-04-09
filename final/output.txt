@@ -1,0 +1,12 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+FF
+Untitled
+C:\Users\wasabi\Desktop\temp\final\final\
+
+MCS
+No
+\temp\final\final\
+
+MCS

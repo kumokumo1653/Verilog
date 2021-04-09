@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/fjsda/Studying/FPGA/Counter5/Counttest_isim_beh.exe" -prj "C:/Users/fjsda/Studying/FPGA/Counter5/Counttest_beh.prj" "work.Counttest" "work.glbl" 

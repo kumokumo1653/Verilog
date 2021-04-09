@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\fjsda\Studying\FPGA\SevenSegment\//7segment -x xcf04s -u 00000000 C:/Users/fjsda/Studying/FPGA/SevenSegment/segment7.bit 
+
+PROM C:\Users\fjsda\Studying\FPGA\SevenSegment\7segment.prm map: SAT 26 DEC 23:6:37 2020
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02d1f832
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Dec 26 23:04:20 2020 C:/Users/fjsda/Studying/FPGA/SevenSegment/segment7.bit

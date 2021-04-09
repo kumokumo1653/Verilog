@@ -1,0 +1,30 @@
+Command line:
+   Counter100Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49758
+
+Sat Dec 26 22:57:58 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5153.06 Meg
+
+ Total Signals          : 6
+ Total Nets             : 15
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 1
+ Total Processes        : 9
+ Total Traceable Variables  : 6
+ Total Scalar Nets and Variables : 30
+Total Line Count : 46
+Total Line Count : 46
+
+ Total Simulation Time: 69.2813 sec
+
+ Current Memory Usage: 4995.77 Meg
+
+Sat Dec 26 22:59:23 2020
+

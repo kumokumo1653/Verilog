@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Dec 26 21:30:50 2020
+# Process ID: 7684
+# Log file: C:/Users/fjsda/Studying/FPGA/SevenSegment/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/fjsda/Studying/FPGA/SevenSegment/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/fjsda/Studying/FPGA/SevenSegment/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  D3]]
+startgroup
+set_property package_pin P118 [get_ports D2]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports D3]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list D3]]
+save_constraints

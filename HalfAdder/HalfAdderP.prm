@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\fjsda\Studying\FPGA\HalfAdder//HalfAdderP -x xcf04s -u 00000000 C:/Users/fjsda/Studying/FPGA/HalfAdder/halfadder.bit 
+
+PROM C:\Users\fjsda\Studying\FPGA\HalfAdder\HalfAdderP.prm map: FRI 6 NOV 9:54:16 2020
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02cf15e2
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Nov 06 09:43:31 2020 C:/Users/fjsda/Studying/FPGA/HalfAdder/halfadder.bit

@@ -1,0 +1,30 @@
+Command line:
+   SwitcherTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56090
+
+Wed Jan 06 17:42:03 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5153.1 Meg
+
+ Total Signals          : 7
+ Total Nets             : 5
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 1
+ Total Processes        : 3
+ Total Traceable Variables  : 3
+ Total Scalar Nets and Variables : 12
+Total Line Count : 14
+Total Line Count : 14
+
+ Total Simulation Time: 11.8438 sec
+
+ Current Memory Usage: 5467.67 Meg
+
+Wed Jan 06 17:42:40 2021
+

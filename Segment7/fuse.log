@@ -1,0 +1,33 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/fjsda/Studying/FPGA/Segment7/segmentTest_isim_beh.exe -prj C:/Users/fjsda/Studying/FPGA/Segment7/segmentTest_beh.prj work.segmentTest 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/Switcher.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/Selector.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/DividerForDynamicLighting.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/DividerForCounter.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/Decoder.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/CounterForDynamicLighting.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/Counter.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/Segment7.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/Segment7/segmentTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module DividerForCounter
+Compiling module DividerForDynamicLighting
+Compiling module Counter
+Compiling module CounterForDynamicLighting
+Compiling module Selector
+Compiling module Switcher
+Compiling module Decoder
+Compiling module Segment7
+Compiling module segmentTest
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 指定されたパスが見つかりません。, "isim\segmentTest_isim_beh.exe.sim\libPortability.dll".
+Compiled 9 Verilog Units
+Built simulation executable C:/Users/fjsda/Studying/FPGA/Segment7/segmentTest_isim_beh.exe
+Fuse Memory Usage: 28264 KB
+Fuse CPU Usage: 953 ms

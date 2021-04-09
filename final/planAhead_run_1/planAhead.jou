@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Feb 12 13:02:34 2021
+# Process ID: 9100
+# Log file: C:/Users/wasabi/Desktop/temp/final/final/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/wasabi/Desktop/temp/final/final/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/wasabi/Desktop/temp/final/final/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  CLK]]
+set_property iostandard LVCMOS33 [get_ports [list CLK]]
+set_property iostandard LVCMOS33 [get_ports [list D1]]
+set_property iostandard LVCMOS33 [get_ports [list D2]]
+set_property iostandard LVCMOS33 [get_ports [list D3]]
+set_property iostandard LVCMOS33 [get_ports [list D4]]
+set_property iostandard LVCMOS33 [get_ports [list D_out1]]
+set_property iostandard LVCMOS33 [get_ports [list D_out2]]
+set_property iostandard LVCMOS33 [get_ports [list D_out3]]
+set_property iostandard LVCMOS33 [get_ports [list D_out4]]
+set_property iostandard LVCMOS33 [get_ports [list D_out5]]
+set_property iostandard LVCMOS33 [get_ports [list D_out6]]
+set_property iostandard LVCMOS33 [get_ports [list D_out7]]
+set_property iostandard LVCMOS33 [get_ports [list D_out8]]
+undo
+set_property iostandard LVCMOS33 [get_ports [list SW1]]
+set_property iostandard LVCMOS33 [get_ports [list D_out8]]
+set_property iostandard LVCMOS33 [get_ports [list SW2]]
+set_property iostandard LVCMOS33 [get_ports [list SW6]]
+set_property iostandard LVCMOS33 [get_ports [list SW7]]
+set_property iostandard LVCMOS33 [get_ports [list SW8]]
+set_property iostandard LVCMOS33 [get_ports [list SW9]]
+set_property iostandard LVCMOS33 [get_ports [list SW12]]
+set_property iostandard LVCMOS33 [get_ports [list SW13]]
+set_property iostandard LVCMOS33 [get_ports [list SW14]]
+set_property iostandard LVCMOS33 [get_ports [list SW15]]
+set_property iostandard LVCMOS33 [get_ports [list SW17]]
+set_property iostandard LVCMOS33 [get_ports [list SW18]]
+set_property iostandard LVCMOS33 [get_ports [list SW22]]
+startgroup
+set_property package_pin P94 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P124 [get_ports D1]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports D2]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports D3]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports D4]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports D_out1]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports D_out2]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports D_out3]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports D_out4]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports D_out5]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports D_out6]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports D_out7]
+endgroup
+startgroup
+set_property package_pin P126 [get_ports D_out8]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports SW1]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports SW2]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports SW6]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports SW7]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports SW8]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports SW9]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports SW12]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports SW13]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports SW14]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports SW13]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports SW15]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports SW17]
+endgroup
+startgroup
+set_property package_pin P50 [get_ports SW18]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports SW22]
+endgroup
+save_constraints

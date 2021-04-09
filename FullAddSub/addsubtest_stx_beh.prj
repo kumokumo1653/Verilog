@@ -1,0 +1,7 @@
+verilog isim_temp "HalfSUB.v"
+verilog isim_temp "HalfADD.v"
+verilog isim_temp "FullSUB.v"
+verilog isim_temp "FullADD.v"
+verilog isim_temp "ADDSUB.v"
+verilog isim_temp "addsubtest.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

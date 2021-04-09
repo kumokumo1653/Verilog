@@ -1,0 +1,18 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "A[1]" IOSTANDARD = LVCMOS33;
+NET "A[0]" IOSTANDARD = LVCMOS33;
+NET "F[3]" IOSTANDARD = LVCMOS33;
+NET "F[2]" IOSTANDARD = LVCMOS33;
+NET "F[1]" IOSTANDARD = LVCMOS33;
+NET "F[0]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "A[1]" LOC = P114;
+NET "A[0]" LOC = P121;
+NET "F[3]" LOC = P98;
+NET "F[2]" LOC = P93;
+NET "F[1]" LOC = P95;
+NET "F[0]" LOC = P88;

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\fjsda\Studying\FPGA\Encoder\impact.xsl
+OUTFILE=C:\Users\fjsda\Studying\FPGA\Encoder\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\fjsda\Studying\FPGA\Encoder
+LICENSE=iMPACT
+USER_INFO=iMPACT

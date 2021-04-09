@@ -1,0 +1,11 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+Auto Select Storage Device
+FF
+7segment
+C:/Users/fjsda/Studying/FPGA/Segment7
+
+MCS
+
+MCS

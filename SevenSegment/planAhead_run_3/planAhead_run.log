@@ -1,0 +1,78 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/fjsda/Studying/FPGA/SevenSegment/pa.fromHdl.tcl
+# create_project -name SevenSegment -dir "C:/Users/fjsda/Studying/FPGA/SevenSegment/planAhead_run_3" -part xc6slx9tqg144-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Segment7.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/fjsda/Studying/FPGA/SevenSegment/Segment7.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Switcher.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Selector.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DividerForDynamicLighting.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DividerForCounter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Decoder8.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CounterForDynamicLighting.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Counter100.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Segment7.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Segment7 $srcset
+# add_files [list {Segment7.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/Switcher.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/Selector.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/DividerForDynamicLighting.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/DividerForCounter.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/Decoder8.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/CounterForDynamicLighting.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/Counter100.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/FPGA/SevenSegment/Segment7.v" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/fjsda/Studying/FPGA/SevenSegment/Segment7.ucf]
+Finished Parsing UCF File [C:/Users/fjsda/Studying/FPGA/SevenSegment/Segment7.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 9e42d812
+open_rtl_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 484.082 ; gain = 87.633
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list REVERSE]]
+startgroup
+set_property package_pin P98 [get_ports REVERSE]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Dec 26 23:02:35 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

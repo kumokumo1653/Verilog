@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="DOUT">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK" Dir="IN"/>
+		<Port Id="SW1" Dir="IN"/>
+		<Port Id="SW2" Dir="IN"/>
+		<Port Id="SW3" Dir="IN"/>
+		<Port Id="SW4" Dir="IN"/>
+		<Port Id="SW5" Dir="IN"/>
+		<Port Id="SW6" Dir="IN"/>
+		<Port Id="SW7" Dir="IN"/>
+		<Port Id="SW8" Dir="IN"/>
+		<Port Id="SW17" Dir="IN"/>
+		<Port Id="SW18" Dir="IN"/>
+		<Port Id="SW22" Dir="IN"/>
+		<Port Id="SIG1" Dir="OUT"/>
+		<Port Id="SIG2" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

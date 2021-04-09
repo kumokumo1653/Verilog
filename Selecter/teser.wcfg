@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/fjsda/Studying/FPGA/Selecter/SelectorTester_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="SelectorTester" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/SelectorTester/O" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">O[2:0]</obj_property>
+      <obj_property name="ObjectShortName">O[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SelectorTester/EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EN</obj_property>
+      <obj_property name="ObjectShortName">EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SelectorTester/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[2:0]</obj_property>
+      <obj_property name="ObjectShortName">A[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SelectorTester/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[2:0]</obj_property>
+      <obj_property name="ObjectShortName">B[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SelectorTester/C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C[2:0]</obj_property>
+      <obj_property name="ObjectShortName">C[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SelectorTester/SW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[1:0]</obj_property>
+   </wvobject>
+</wave_config>

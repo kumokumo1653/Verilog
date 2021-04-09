@@ -1,0 +1,30 @@
+Command line:
+   OutputSelectorTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50131
+
+Fri Feb 12 10:32:14 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5153.12 Meg
+
+ Total Signals          : 11
+ Total Nets             : 38
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 1
+ Total Processes        : 9
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 106
+Total Line Count : 26
+Total Line Count : 26
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 5467.69 Meg
+
+Fri Feb 12 10:33:07 2021
+
