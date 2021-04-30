@@ -1,0 +1,452 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: segment7.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "segment7.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "segment7"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : segment7
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\fjsda\Studying\Verilog\segment7Module\Divider.v" into library work
+Parsing module <Divider>.
+Analyzing Verilog file "C:\Users\fjsda\Studying\Verilog\segment7Module\segment7.v" into library work
+Parsing module <segment7>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <segment7>.
+
+Elaborating module <Divider>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <segment7>.
+    Related source file is "C:\Users\fjsda\Studying\Verilog\segment7Module\segment7.v".
+    Found 4-bit register for signal <preDIGIT>.
+    Found 4-bit register for signal <DIGIT>.
+    Found 8-bit register for signal <PATTERN>.
+    Found 1-bit register for signal <STATUS>.
+    Found 8-bit 4-to-1 multiplexer for signal <DIGIT[3]_ALL_PATTERNS[3][7]_wide_mux_18_OUT> created at line 75.
+    Found 4-bit comparator equal for signal <preDIGIT[3]_DIGIT[3]_equal_12_o> created at line 72
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <segment7> synthesized.
+
+Synthesizing Unit <Divider>.
+    Related source file is "C:\Users\fjsda\Studying\Verilog\segment7Module\Divider.v".
+    Found 1-bit register for signal <CLK_OUT>.
+    Found 15-bit register for signal <Q>.
+    Found 15-bit adder for signal <Q[14]_GND_2_o_add_2_OUT> created at line 32.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Divider> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 15-bit adder                                          : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 15-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Divider>.
+The following registers are absorbed into counter <Q>: 1 register on signal <Q>.
+Unit <Divider> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <segment7> ...
+WARNING:Xst:1426 - The value init of the FF/Latch PATTERN_7 hinder the constant cleaning in the block segment7.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch PATTERN_7 hinder the constant cleaning in the block segment7.
+   You should achieve better results by setting this init to 1.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1426 - The value init of the FF/Latch PATTERN_7 hinder the constant cleaning in the block segment7.
+   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block segment7, actual ratio is 1.
+FlipFlop DIGIT_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : segment7.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 133
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 14
+#      LUT2                        : 2
+#      LUT3                        : 2
+#      LUT4                        : 35
+#      LUT5                        : 6
+#      LUT6                        : 37
+#      MUXCY                       : 14
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 34
+#      FD                          : 16
+#      FD_1                        : 17
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 17
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of  11440     0%  
+ Number of Slice LUTs:                   98  out of   5720     1%  
+    Number used as Logic:                98  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    102
+   Number with an unused Flip Flop:      69  out of    102    67%  
+   Number with an unused LUT:             4  out of    102     3%  
+   Number of fully used LUT-FF pairs:    29  out of    102    28%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    102    29%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+divider/CLK_OUT                    | NONE(STATUS)           | 18    |
+CLK                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.249ns (Maximum Frequency: 235.349MHz)
+   Minimum input arrival time before clock: 5.633ns
+   Maximum output required time after clock: 4.906ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/CLK_OUT'
+  Clock period: 4.249ns (frequency: 235.349MHz)
+  Total number of paths / destination ports: 154 / 17
+-------------------------------------------------------------------------
+Delay:               4.249ns (Levels of Logic = 3)
+  Source:            DIGIT_2 (FF)
+  Destination:       PATTERN_2 (FF)
+  Source Clock:      divider/CLK_OUT falling
+  Destination Clock: divider/CLK_OUT falling
+
+  Data Path: DIGIT_2 to PATTERN_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            20   0.525   1.286  DIGIT_2 (DIGIT_2)
+     LUT4:I3->O            6   0.254   0.876  preDIGIT[3]_DIGIT[3]_equal_12_o4_SW0 (N01)
+     LUT5:I4->O            2   0.254   0.726  preDIGIT[3]_DIGIT[3]_equal_12_o4 (preDIGIT[3]_DIGIT[3]_equal_12_o)
+     LUT6:I5->O            1   0.254   0.000  PATTERN_3_glue_set (PATTERN_3_glue_set)
+     FD_1:D                    0.074          PATTERN_3
+    ----------------------------------------
+    Total                      4.249ns (1.361ns logic, 2.888ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.679ns (frequency: 271.813MHz)
+  Total number of paths / destination ports: 361 / 17
+-------------------------------------------------------------------------
+Delay:               3.679ns (Levels of Logic = 2)
+  Source:            divider/Q_2 (FF)
+  Destination:       divider/Q_12 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: divider/Q_2 to divider/Q_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  divider/Q_2 (divider/Q_2)
+     LUT6:I0->O           16   0.254   1.410  divider/GND_2_o_GND_2_o_equal_2_o<14>2 (divider/GND_2_o_GND_2_o_equal_2_o<14>1)
+     LUT6:I3->O            1   0.235   0.000  divider/Q_12_rstpot (divider/Q_12_rstpot)
+     FD:D                      0.074          divider/Q_12
+    ----------------------------------------
+    Total                      3.679ns (1.088ns logic, 2.591ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'divider/CLK_OUT'
+  Total number of paths / destination ports: 147 / 12
+-------------------------------------------------------------------------
+Offset:              5.633ns (Levels of Logic = 4)
+  Source:            D4<1> (PAD)
+  Destination:       PATTERN_3 (FF)
+  Destination Clock: divider/CLK_OUT falling
+
+  Data Path: D4<1> to PATTERN_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.328   1.220  D4_1_IBUF (D4_1_IBUF)
+     LUT4:I0->O            1   0.254   1.137  Mmux_DIGIT[3]_ALL_PATTERNS[3][7]_wide_mux_18_OUT43_SW0 (N2)
+     LUT6:I0->O            1   0.254   1.112  Mmux_DIGIT[3]_ALL_PATTERNS[3][7]_wide_mux_18_OUT43 (Mmux_DIGIT[3]_ALL_PATTERNS[3][7]_wide_mux_18_OUT42)
+     LUT6:I1->O            1   0.254   0.000  PATTERN_3_glue_set (PATTERN_3_glue_set)
+     FD_1:D                    0.074          PATTERN_3
+    ----------------------------------------
+    Total                      5.633ns (2.164ns logic, 3.469ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/CLK_OUT'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.906ns (Levels of Logic = 1)
+  Source:            DIGIT_1 (FF)
+  Destination:       DIGIT<1> (PAD)
+  Source Clock:      divider/CLK_OUT falling
+
+  Data Path: DIGIT_1 to DIGIT<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            29   0.525   1.469  DIGIT_1 (DIGIT_1)
+     OBUF:I->O                 2.912          DIGIT_1_OBUF (DIGIT<1>)
+    ----------------------------------------
+    Total                      4.906ns (3.437ns logic, 1.469ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.679|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock divider/CLK_OUT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+divider/CLK_OUT|    2.375|         |    4.249|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.80 secs
+ 
+--> 
+
+Total memory usage is 4485892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

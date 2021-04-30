@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-04-09T10:18:05</DateModified>
+  <DateModified>2021-04-30T09:43:58</DateModified>
   <ModuleName>segment7</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/fjsda/Studying/FPGA/segment7Module/iseconfig/segment7.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/fjsda/Studying/FPGA/segment7Module</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/fjsda/Studying/Verilog/segment7Module/iseconfig/segment7.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/fjsda/Studying/Verilog/segment7Module\</ImplementationReportsDirectory>
   <DateInitialized>2021-04-09T09:36:30</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

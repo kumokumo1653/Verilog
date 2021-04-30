@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Apr 23 09:12:41 2021
+# Process ID: 728
+# Log file: C:/Users/fjsda/Studying/Verilog/segment7Module/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/fjsda/Studying/Verilog/segment7Module/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/fjsda/Studying/Verilog/segment7Module/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list {D1[3]} {D1[2]} {D1[1]} {D1[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {D2[3]} {D2[2]} {D2[1]} {D2[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {D3[3]} {D3[2]} {D3[1]} {D3[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {D4[3]} {D4[2]} {D4[1]} {D4[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {DIGIT[3]} {DIGIT[2]} {DIGIT[1]} {DIGIT[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {PATTERN[7]} {PATTERN[6]} {PATTERN[5]} {PATTERN[4]} {PATTERN[3]} {PATTERN[2]} {PATTERN[1]} {PATTERN[0]}]]
+set_property package_pin "" [get_ports [list  {D1[3]}]]
+set_property package_pin "" [get_ports [list  {D1[2]}]]
+startgroup
+set_property package_pin P56 [get_ports {D1[3]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {D1[2]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {D1[1]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {D1[0]}]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports {D2[3]}]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports {D2[2]}]
+endgroup
+startgroup
+set_property package_pin P38 [get_ports {D2[1]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {D2[0]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {D3[3]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {D3[2]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {D3[1]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {D3[0]}]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports {D4[3]}]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports {D4[2]}]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports {D4[1]}]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports {D4[0]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {DIGIT[3]}]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports {DIGIT[2]}]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports {DIGIT[1]}]
+endgroup
+startgroup
+set_property package_pin P124 [get_ports {DIGIT[0]}]
+endgroup
+startgroup
+set_property package_pin P126 [get_ports {PATTERN[7]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {PATTERN[6]}]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports {PATTERN[5]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {PATTERN[4]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {PATTERN[3]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports {PATTERN[2]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {PATTERN[1]}]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports {PATTERN[0]}]
+endgroup
+save_constraints

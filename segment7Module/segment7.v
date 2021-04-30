@@ -20,18 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 module segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 	input CLK, IN_CLR;
-	input D1[3:0];
-	input D2[3:0];
-	input D3[3:0];
-	input D4[3:0];
-	output PATTERN[7:0];
-	output DIGIT[3:0];
+	input [3:0]D1;
+	input [3:0]D2;
+	input [3:0]D3;
+	input [3:0]D4;
+	output [7:0]PATTERN;
+	output [3:0]DIGIT;
 	
-	reg PATTERN[7:0] = 8'b00000000;
-	reg ALL_PATTERNS[7:0][0:4];
-	reg DIGIT[3:0] = 4'b0001;
+	reg [7:0]PATTERN = 8'b00000000;
+	reg [7:0]ALL_PATTERNS[0:4];
+	reg [3:0]DIGIT = 4'b0001;
+	reg [3:0]preDIGIT = 4'b0001;
 	wire DIVIDED_CLK;
-	wire STATUS  = 0;
+	reg STATUS  = 1'b0;
 	
 	initial begin
 		ALL_PATTERNS[0] = 8'b00000000;
@@ -54,24 +55,30 @@ module segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 	end
 	
 	always @ (posedge DIVIDED_CLK) begin
-		STATUS = ~STATUS;
+		STATUS <= ~STATUS;
 	end
 	
 	always @ (negedge DIVIDED_CLK) begin
+		preDIGIT <= DIGIT;
 		if (STATUS == 1 && IN_CLR == 1)begin
-			DIGIT <= DIGIT << 1;
-			if(DIGIT == 4'b0000) begin
+			if(DIGIT == 4'b1000) begin
 				DIGIT <= 4'b0001;
 			end
-			PATTERN <= ALL_PATTERNS[selector(DIGIT)];
+			else begin
+				DIGIT <= DIGIT << 1;
+			end
+
 		end
-		else begin
-			PATTERN <= 8'b00000000;
+		if(preDIGIT == DIGIT) begin
+			PATTERN <= 8'b11111111;
+		end else begin
+			PATTERN <= ALL_PATTERNS[selector(DIGIT)];
 		end
 	end
 	
 	
-	Divider divider(.CLK(CLK), .CE_OUT(DIVIDED_CLK));
+	
+	Divider divider(.CLK(CLK), .CLK_OUT(DIVIDED_CLK));
 	
 	function [1:0]selector;
 		input [3:0]in;
@@ -81,7 +88,7 @@ module segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 			4'b0010:selector = 2'b01;
 			4'b0100:selector = 2'b10;
 			4'b1000:selector = 2'b11;
-			default:decode = 2'bXX;
+			default:selector= 2'bXX;
 		endcase
 	end
 	endfunction
@@ -106,7 +113,7 @@ module segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 			13:decode = 8'b10100001;
 			14:decode = 8'b10000110;
 			15:decode = 8'b10001110;
-			default:decode = 8'bXXXXXXXX;
+			default:decode = 8'b11111111;
 		endcase
 	end
 	endfunction

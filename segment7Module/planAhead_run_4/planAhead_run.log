@@ -1,0 +1,119 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/fjsda/Studying/Verilog/segment7Module/pa.fromHdl.tcl
+# create_project -name segment7Module -dir "C:/Users/fjsda/Studying/Verilog/segment7Module/planAhead_run_4" -part xc6slx9tqg144-2
+create_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 376.176 ; gain = 28.395
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "segment7.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/fjsda/Studying/Verilog/segment7Module/segment7.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Divider.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {segment7.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top segment7 $srcset
+# add_files [list {segment7.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/fjsda/Studying/Verilog/segment7Module/Divider.v" into library work
+Analyzing Verilog file "C:/Users/fjsda/Studying/Verilog/segment7Module/segment7.v" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/fjsda/Studying/Verilog/segment7Module/segment7.ucf]
+Finished Parsing UCF File [C:/Users/fjsda/Studying/Verilog/segment7Module/segment7.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8f7670f1
+open_rtl_design: Time (s): elapsed = 00:00:35 . Memory (MB): peak = 502.379 ; gain = 113.938
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {D4[3]}]]
+startgroup
+set_property package_pin P95 [get_ports {D4[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {D4[2]}]]
+set_property package_pin "" [get_ports [list  {D4[1]}]]
+set_property package_pin "" [get_ports [list  {D4[0]}]]
+startgroup
+set_property package_pin P98 [get_ports {D4[3]}]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports {D4[2]}]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports {D4[1]}]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports {D4[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {D3[0]}]]
+set_property package_pin "" [get_ports [list  {D3[1]}]]
+set_property package_pin "" [get_ports [list  {D3[2]}]]
+set_property package_pin "" [get_ports [list  {D3[3]}]]
+startgroup
+set_property package_pin P41 [get_ports {D3[0]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {D3[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {D3[2]}]]
+startgroup
+set_property package_pin P59 [get_ports {D3[3]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {D3[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {D2[3]}]]
+set_property package_pin "" [get_ports [list  {D2[2]}]]
+set_property package_pin "" [get_ports [list  {D2[1]}]]
+set_property package_pin "" [get_ports [list  {D2[0]}]]
+startgroup
+set_property package_pin P40 [get_ports {D2[3]}]
+endgroup
+startgroup
+set_property package_pin P38 [get_ports {D2[2]}]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports {D2[1]}]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports {D2[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {D1[3]}]]
+set_property package_pin "" [get_ports [list  {D1[2]}]]
+set_property package_pin "" [get_ports [list  {D1[1]}]]
+set_property package_pin "" [get_ports [list  {D1[0]}]]
+startgroup
+set_property package_pin P45 [get_ports {D1[3]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {D1[2]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {D1[1]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {D1[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Apr 23 13:55:06 2021...
+INFO: [Common 17-83] Releasing license: PlanAhead
