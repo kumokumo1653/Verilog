@@ -28,7 +28,7 @@ module segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 	output [3:0]DIGIT;
 	
 	reg [7:0]PATTERN = 8'b00000000;
-	reg [7:0]ALL_PATTERNS[0:4];
+	reg [7:0]ALL_PATTERNS[0:3];
 	reg [3:0]DIGIT = 4'b0001;
 	reg [3:0]preDIGIT = 4'b0001;
 	wire DIVIDED_CLK;

@@ -18,5 +18,5 @@ Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 指定されたパスが見つかりません。, "isim\seg7_isim_beh.exe.sim\libPortability.dll".
 Compiled 4 Verilog Units
 Built simulation executable C:/Users/fjsda/Studying/Verilog/segment7Module/seg7_isim_beh.exe
-Fuse Memory Usage: 28572 KB
-Fuse CPU Usage: 890 ms
+Fuse Memory Usage: 28452 KB
+Fuse CPU Usage: 967 ms

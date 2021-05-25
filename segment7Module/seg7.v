@@ -58,11 +58,19 @@ module seg7;
 		D4 = 4'b0101;
 		
 		forever begin
-		#12.5 CLK = ~CLK;
+		#1 CLK = ~CLK;
 		end
 		
 		// Add stimulus here
 
+	end
+	initial begin
+		#800000 D1 = 4'b1000;
+		#100	D2 = 4'b0000;
+		#100  D3 = 4'b1001;
+		#100  D4 = 4'b0110;
+		#2000000 IN_CLR = 0;
+		#2000000 IN_CLR = 1;
 	end
       
 endmodule

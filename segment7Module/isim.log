@@ -15,4 +15,4 @@ Finished circuit initialization process.
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 198708762500 ps : File "C:/Users/fjsda/Studying/Verilog/segment7Module/Divider.v" Line 26
+Stopped at time : 84544828 ns : File "C:/Users/fjsda/Studying/Verilog/segment7Module/seg7.v" Line 60
