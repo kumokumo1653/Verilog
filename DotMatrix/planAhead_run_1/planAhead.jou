@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Jun 23 15:19:46 2021
+# Process ID: 6728
+# Log file: C:/Users/ohike/Studying/Verilog/DotMatrix/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/ohike/Studying/Verilog/DotMatrix/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/ohike/Studying/Verilog/DotMatrix/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list {column_seg[3]} {column_seg[2]} {column_seg[1]} {column_seg[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {in_column[15]} {in_column[14]} {in_column[13]} {in_column[12]} {in_column[11]} {in_column[10]} {in_column[9]} {in_column[8]} {in_column[7]} {in_column[6]} {in_column[5]} {in_column[4]} {in_column[3]} {in_column[2]} {in_column[1]} {in_column[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {out_column[15]} {out_column[14]} {out_column[13]} {out_column[12]} {out_column[11]} {out_column[10]} {out_column[9]} {out_column[8]} {out_column[7]} {out_column[6]} {out_column[5]} {out_column[4]} {out_column[3]} {out_column[2]} {out_column[1]} {out_column[0]}]]
+set_property package_pin "" [get_ports [list  {column_seg[3]}]]
+set_property package_pin "" [get_ports [list  {column_seg[1]}]]
+startgroup
+set_property package_pin P46 [get_ports {column_seg[3]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {column_seg[2]}]
+endgroup
+startgroup
+set_property package_pin P92 [get_ports {column_seg[1]}]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports {column_seg[0]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {in_column[15]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {in_column[14]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {in_column[13]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {in_column[12]}]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports {in_column[11]}]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports {in_column[10]}]
+endgroup
+startgroup
+set_property package_pin P38 [get_ports {in_column[9]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {in_column[8]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {in_column[7]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {in_column[6]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {in_column[5]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {in_column[4]}]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports {in_column[3]}]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports {in_column[2]}]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports {in_column[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {in_column[0]}]]
+startgroup
+set_property package_pin P98 [get_ports {in_column[0]}]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports {out_column[15]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {out_column[14]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {out_column[13]}]
+endgroup
+set_property package_pin "" [get_ports [list  {out_column[12]}]]
+set_property package_pin "" [get_ports [list  {out_column[11]}]]
+startgroup
+set_property package_pin P61 [get_ports {out_column[12]}]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports {out_column[11]}]
+endgroup
+startgroup
+set_property package_pin P64 [get_ports {out_column[10]}]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports {out_column[9]}]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports {out_column[8]}]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports {out_column[7]}]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports {out_column[6]}]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports {out_column[5]}]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports {out_column[4]}]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports {out_column[3]}]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports {out_column[2]}]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports {out_column[1]}]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports {out_column[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  CLK]]
+set_property package_pin "" [get_ports [list  COLUMN_CLK]]
+startgroup
+set_property package_pin P94 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports COLUMN_CLK]
+endgroup
+set_property package_pin "" [get_ports [list  IN_CLR]]
+set_property package_pin "" [get_ports [list  LOAD]]
+set_property package_pin "" [get_ports [list  IN_CLR]]
+set_property package_pin "" [get_ports [list  LOAD]]
+startgroup
+set_property package_pin P50 [get_ports IN_CLR]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports LOAD]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports OUT_CLR]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports RESET]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list CLK]]
+set_property iostandard LVCMOS33 [get_ports [list COLUMN_CLK]]
+set_property iostandard LVCMOS33 [get_ports [list IN_CLR]]
+set_property iostandard LVCMOS33 [get_ports [list LOAD]]
+set_property iostandard LVCMOS25 [get_ports [list OUT_CLR]]
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+set_property iostandard LVCMOS33 [get_ports [list OUT_CLR]]
+save_constraints

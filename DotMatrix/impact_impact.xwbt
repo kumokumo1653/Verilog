@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\ohike\Studying\Verilog\DotMatrix\impact.xsl
+OUTFILE=C:\Users\ohike\Studying\Verilog\DotMatrix\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\ohike\Studying\Verilog\DotMatrix
+LICENSE=iMPACT
+USER_INFO=iMPACT

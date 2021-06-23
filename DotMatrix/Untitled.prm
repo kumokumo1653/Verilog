@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\ohike\Studying\Verilog\DotMatrix\//Untitled -x xcf04s -u 00000000 C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit 
+
+PROM C:\Users\ohike\Studying\Verilog\DotMatrix\Untitled.prm map: WED 23 JUN 16:22:28 2021
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02d09d4e
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Jun 23 16:21:12 2021 C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit

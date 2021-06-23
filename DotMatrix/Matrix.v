@@ -27,13 +27,13 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 	output [15:0]out_column;
 
 	reg [3:0] column_seg;
-	reg [15:0] drawing_column_pattern;
-	reg [4:0] drawing_column_id;
+	reg [15:0] drawing_column_pattern = 16'b0000_0000_0000_0000;
+	reg [4:0] drawing_column_id = 5'b0000;
 	reg [15:0] pattern1;
 	reg [15:0] pattern2;
 	reg [15:0] pattern3;
 	reg [15:0] pattern4;
-	reg status;
+	reg status = 1;
 
 	//init 
 	initial begin
@@ -74,7 +74,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 	wire Divided_CLK;
 
 	assign OUT_CLR = (IN_CLR | RESET);
-
+	assign COLUMN_CLK = status;
 	Divider divider(.CLK(CLK), .CLK_OUT(Divided_CLK));
 
 	always @ (posedge LOAD) begin
