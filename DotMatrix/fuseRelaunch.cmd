@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/ohike/Studying/Verilog/DotMatrix/matrixTEST_isim_beh.exe" -prj "C:/Users/ohike/Studying/Verilog/DotMatrix/matrixTEST_beh.prj" "work.matrixTEST" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST_isim_beh.exe" -prj "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST_beh.prj" "work.matrixTEST" "work.glbl" 

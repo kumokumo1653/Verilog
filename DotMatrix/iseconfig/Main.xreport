@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-06-23T15:44:51</DateModified>
+  <DateModified>2021-06-28T22:58:45</DateModified>
   <ModuleName>Main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ohike/Studying/Verilog/DotMatrix/iseconfig/Main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ohike/Studying/Verilog/DotMatrix\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/iseconfig/Main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix\</ImplementationReportsDirectory>
   <DateInitialized>2021-06-23T15:19:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

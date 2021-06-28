@@ -21,10 +21,9 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/ohike/Studying/Verilog/DotMatrix/matrixTEST.v";
+static const char *ng0 = "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST.v";
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {0, 0};
-static int ng3[] = {1, 0};
 
 
 
@@ -85,7 +84,7 @@ LAB4:    xsi_set_current_line(57, ng0);
     t3 = (t0 + 2568);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(62, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng2)));
     t3 = (t0 + 2728);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(65, ng0);
@@ -145,17 +144,7 @@ LAB12:    t18 = *((unsigned int *)t4);
     *((unsigned int *)t14) = (t20 | t21);
     goto LAB11;
 
-LAB13:    xsi_set_current_line(68, ng0);
-    t2 = (t0 + 3456);
-    xsi_process_wait(t2, 100000LL);
-    *((char **)t1) = &&LAB14;
-    goto LAB1;
-
-LAB14:    xsi_set_current_line(68, ng0);
-    t3 = ((char*)((ng3)));
-    t5 = (t0 + 2568);
-    xsi_vlogvar_assign_value(t5, t3, 0, 0, 1);
-    goto LAB1;
+LAB13:    goto LAB1;
 
 }
 

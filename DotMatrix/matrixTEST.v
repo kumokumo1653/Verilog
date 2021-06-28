@@ -59,13 +59,13 @@ module matrixTEST;
 		CLK = 0;
 		IN_CLR = 0;
 		LOAD = 0;
-		RESET = 1;
+		RESET = 0;
 
 		// Wait 100 ns for global reset to finish
 		forever
 			#1 CLK = ~CLK;
        
-		 #100 LOAD = 1;
+		 //#100 LOAD = 1;
 		// Add stimulus here
 
 	end

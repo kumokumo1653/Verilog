@@ -28,7 +28,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 
 	reg [3:0] column_seg;
 	reg [15:0] drawing_column_pattern = 16'b0000_0000_0000_0000;
-	reg [4:0] drawing_column_id = 5'b0000;
+	reg [4:0] drawing_column_id = 5'b00000;
 	reg [15:0] pattern1;
 	reg [15:0] pattern2;
 	reg [15:0] pattern3;
@@ -77,7 +77,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 	assign COLUMN_CLK = status;
 	Divider divider(.CLK(CLK), .CLK_OUT(Divided_CLK));
 
-	always @ (posedge LOAD) begin
+	always @ (posedge LOAD or posedge RESET) begin
 		if(RESET == 1'b1)begin
 			pattern1[0] <= 16'b0000_0110_0001_0000;
 			pattern1[1] <= 16'b0011_1010_0101_0000;
@@ -138,7 +138,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 	
 	always @ (negedge Divided_CLK) begin
 		if(status == 1) begin
-			drawing_column_id <= drawing_column_id + 1;
+			
 			if(drawing_column_id < 8)begin
 				drawing_column_pattern <= pattern1[convert({drawing_column_id[2], drawing_column_id[1], drawing_column_id[0]})];
 			end else if(drawing_column_id < 16)begin
@@ -146,7 +146,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 			end else if(drawing_column_id < 24)begin
 				drawing_column_pattern <= pattern3[convert({drawing_column_id[2], drawing_column_id[1], drawing_column_id[0]})];
 			end else if(drawing_column_id < 32)begin
-				drawing_column_pattern <= pattern3[convert({drawing_column_id[2], drawing_column_id[1], drawing_column_id[0]})];
+				drawing_column_pattern <= pattern4[convert({drawing_column_id[2], drawing_column_id[1], drawing_column_id[0]})];
 			end
 			
 			if(drawing_column_id == 31)begin
@@ -160,7 +160,12 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 			end else begin
 				column_seg <= 4'b1111;
 			end
-
+			drawing_column_id <= drawing_column_id + 5'b00001;
+			
+			if(drawing_column_id == 32) begin
+				drawing_column_id <= 5'b00000;
+			end
+			
 		end else begin
 				drawing_column_pattern <= 16'b0000_0000_0000_0000;
 		end
