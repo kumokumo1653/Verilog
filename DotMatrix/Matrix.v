@@ -29,10 +29,10 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 	reg [3:0] column_seg;
 	reg [15:0] drawing_column_pattern = 16'b0000_0000_0000_0000;
 	reg [4:0] drawing_column_id = 5'b00000;
-	reg [15:0] pattern1;
-	reg [15:0] pattern2;
-	reg [15:0] pattern3;
-	reg [15:0] pattern4;
+	reg [15:0] pattern1[0:7];
+	reg [15:0] pattern2[0:7];
+	reg [15:0] pattern3[0:7];
+	reg [15:0] pattern4[0:7];
 	reg status = 1;
 
 	//init 

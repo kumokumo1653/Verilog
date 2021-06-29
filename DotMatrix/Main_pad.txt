@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-WED 23 JUN 16:21:2 2021
+TUE 29 JUN 10:55:18 2021
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -117,7 +117,7 @@ Pinout by Pin Number:
 |P95       |in_column<2>  |IOB      |IO_L40P_GCLK11_1          |INPUT    |LVCMOS33   |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P96       |              |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P97       |column_seg<0> |IOB      |IO_L34N_1                 |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|P98       |in_column<0>  |IOB      |IO_L34P_1                 |INPUT    |LVCMOS33   |1             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
+|P98       |in_column<0>  |IOB      |IO_L34P_1                 |INPUT    |LVCMOS33   |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P99       |COLUMN_CLK    |IOB      |IO_L33N_1                 |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P100      |OUT_CLR       |IOB      |IO_L33P_1                 |OUTPUT   |LVCMOS33   |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P101      |RESET         |IOB      |IO_L32N_1                 |INPUT    |LVCMOS33   |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |

@@ -53,21 +53,19 @@ module MainTEst;
 	initial begin
 		// Initialize Inputs
 		
-		in_column = 16'b0000000000000000;
+		in_column = 16'b1111111111111111;
 		CLK = 0;
 		IN_CLR = 0;
 		LOAD = 0;
-		RESET = 1;
-
-		// Wait 100 ns for global reset to finish
-		forever
-			#1 CLK = ~CLK;
-       
-		 #100 LOAD = 1;
-        
-		// Add stimulus here
+		RESET = 0;
 
 	end
-      
+	always #1 begin
+		CLK = ~CLK;
+	end
+	
+	always #10000 begin
+		LOAD = ~LOAD;
+	end
 endmodule
 

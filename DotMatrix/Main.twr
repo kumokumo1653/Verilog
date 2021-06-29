@@ -32,39 +32,62 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock LOAD
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-RESET       |    1.150(R)|      SLOW  |    0.867(R)|      SLOW  |LOAD_BUFGP        |   0.000|
-in_column<0>|    0.036(R)|      FAST  |    1.617(R)|      SLOW  |LOAD_BUFGP        |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+RESET        |    7.811(R)|      SLOW  |   -1.029(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<0> |    4.952(R)|      SLOW  |   -1.304(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<1> |    4.428(R)|      SLOW  |   -0.604(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<2> |    4.771(R)|      SLOW  |   -0.641(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<3> |    3.958(R)|      SLOW  |   -0.532(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<4> |    4.357(R)|      SLOW  |   -0.537(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<5> |    4.213(R)|      SLOW  |   -0.536(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<6> |    4.325(R)|      SLOW  |   -0.464(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<7> |    5.271(R)|      SLOW  |   -1.310(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<8> |    4.736(R)|      SLOW  |   -0.763(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<9> |    4.394(R)|      SLOW  |   -0.640(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<10>|    3.865(R)|      SLOW  |   -0.563(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<11>|    4.427(R)|      SLOW  |   -0.678(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<12>|    4.516(R)|      SLOW  |   -0.736(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<13>|    4.546(R)|      SLOW  |   -1.112(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<14>|    4.614(R)|      SLOW  |   -0.928(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<15>|    4.337(R)|      SLOW  |   -0.342(R)|      SLOW  |LOAD_BUFGP        |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.891|         |         |         |
+CLK            |    3.326|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock LOAD
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LOAD           |    3.276|    2.686|         |    4.066|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-IN_CLR         |OUT_CLR        |   13.181|
-RESET          |OUT_CLR        |    9.432|
+IN_CLR         |OUT_CLR        |   12.791|
+RESET          |OUT_CLR        |   13.799|
 ---------------+---------------+---------+
 
 
-Analysis completed WED 23 JUN 16:21:6 2021 
+Analysis completed TUE 29 JUN 10:55:23 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4570 MB
+Peak Memory Usage: 4574 MB
 
 
 

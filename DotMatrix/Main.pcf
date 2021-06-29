@@ -1,49 +1,49 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Jun 23 16:20:56 2021
+// Written by: Map P.20131013 on Tue Jun 29 10:54:26 2021
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "in_column<2>" LOCATE = SITE "P95" LEVEL 1;
-COMP "in_column<3>" LOCATE = SITE "P88" LEVEL 1;
-COMP "in_column<4>" LOCATE = SITE "P59" LEVEL 1;
-COMP "in_column<5>" LOCATE = SITE "P58" LEVEL 1;
-COMP "in_column<6>" LOCATE = SITE "P57" LEVEL 1;
-COMP "in_column<7>" LOCATE = SITE "P41" LEVEL 1;
+COMP "OUT_CLR" LOCATE = SITE "P100" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P94" LEVEL 1;
 COMP "LOAD" LOCATE = SITE "P51" LEVEL 1;
-COMP "in_column<8>" LOCATE = SITE "P40" LEVEL 1;
-COMP "in_column<9>" LOCATE = SITE "P38" LEVEL 1;
+COMP "RESET" LOCATE = SITE "P101" LEVEL 1;
+COMP "out_column<0>" LOCATE = SITE "P79" LEVEL 1;
+COMP "out_column<1>" LOCATE = SITE "P80" LEVEL 1;
+COMP "out_column<2>" LOCATE = SITE "P83" LEVEL 1;
+COMP "out_column<3>" LOCATE = SITE "P82" LEVEL 1;
+COMP "out_column<4>" LOCATE = SITE "P85" LEVEL 1;
+COMP "out_column<5>" LOCATE = SITE "P84" LEVEL 1;
+COMP "out_column<6>" LOCATE = SITE "P87" LEVEL 1;
+COMP "out_column<7>" LOCATE = SITE "P81" LEVEL 1;
+COMP "out_column<8>" LOCATE = SITE "P75" LEVEL 1;
+COMP "out_column<9>" LOCATE = SITE "P78" LEVEL 1;
+COMP "COLUMN_CLK" LOCATE = SITE "P99" LEVEL 1;
+COMP "IN_CLR" LOCATE = SITE "P50" LEVEL 1;
 COMP "column_seg<0>" LOCATE = SITE "P97" LEVEL 1;
 COMP "column_seg<1>" LOCATE = SITE "P92" LEVEL 1;
 COMP "column_seg<2>" LOCATE = SITE "P55" LEVEL 1;
 COMP "column_seg<3>" LOCATE = SITE "P46" LEVEL 1;
-COMP "COLUMN_CLK" LOCATE = SITE "P99" LEVEL 1;
 COMP "in_column<10>" LOCATE = SITE "P48" LEVEL 1;
 COMP "in_column<11>" LOCATE = SITE "P47" LEVEL 1;
 COMP "in_column<12>" LOCATE = SITE "P45" LEVEL 1;
 COMP "in_column<13>" LOCATE = SITE "P44" LEVEL 1;
 COMP "in_column<14>" LOCATE = SITE "P43" LEVEL 1;
 COMP "in_column<15>" LOCATE = SITE "P56" LEVEL 1;
-COMP "out_column<0>" LOCATE = SITE "P79" LEVEL 1;
-COMP "out_column<1>" LOCATE = SITE "P80" LEVEL 1;
-COMP "out_column<2>" LOCATE = SITE "P83" LEVEL 1;
 COMP "out_column<10>" LOCATE = SITE "P64" LEVEL 1;
-COMP "out_column<3>" LOCATE = SITE "P82" LEVEL 1;
 COMP "out_column<11>" LOCATE = SITE "P74" LEVEL 1;
-COMP "out_column<4>" LOCATE = SITE "P85" LEVEL 1;
 COMP "out_column<12>" LOCATE = SITE "P61" LEVEL 1;
-COMP "out_column<5>" LOCATE = SITE "P84" LEVEL 1;
 COMP "out_column<13>" LOCATE = SITE "P66" LEVEL 1;
-COMP "OUT_CLR" LOCATE = SITE "P100" LEVEL 1;
-COMP "out_column<6>" LOCATE = SITE "P87" LEVEL 1;
 COMP "out_column<14>" LOCATE = SITE "P62" LEVEL 1;
-COMP "out_column<7>" LOCATE = SITE "P81" LEVEL 1;
 COMP "out_column<15>" LOCATE = SITE "P67" LEVEL 1;
-COMP "out_column<8>" LOCATE = SITE "P75" LEVEL 1;
-COMP "out_column<9>" LOCATE = SITE "P78" LEVEL 1;
-COMP "CLK" LOCATE = SITE "P94" LEVEL 1;
-COMP "RESET" LOCATE = SITE "P101" LEVEL 1;
 COMP "in_column<0>" LOCATE = SITE "P98" LEVEL 1;
-COMP "IN_CLR" LOCATE = SITE "P50" LEVEL 1;
 COMP "in_column<1>" LOCATE = SITE "P93" LEVEL 1;
+COMP "in_column<2>" LOCATE = SITE "P95" LEVEL 1;
+COMP "in_column<3>" LOCATE = SITE "P88" LEVEL 1;
+COMP "in_column<4>" LOCATE = SITE "P59" LEVEL 1;
+COMP "in_column<5>" LOCATE = SITE "P58" LEVEL 1;
+COMP "in_column<6>" LOCATE = SITE "P57" LEVEL 1;
+COMP "in_column<7>" LOCATE = SITE "P41" LEVEL 1;
+COMP "in_column<8>" LOCATE = SITE "P40" LEVEL 1;
+COMP "in_column<9>" LOCATE = SITE "P38" LEVEL 1;
 SCHEMATIC END;
 

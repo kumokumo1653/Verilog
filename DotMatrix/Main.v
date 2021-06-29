@@ -27,5 +27,11 @@ module Main(in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_column, COLUMN_
 	output [15:0]out_column;
 	reg[4:0]column_id = 5'b00000;
 	
+	always @ (negedge LOAD)begin
+		column_id <= column_id + 5'b00001;
+		if(column_id == 32) begin
+			column_id <= 5'b00000;
+		end
+	end
 	Matrix matrix(.column_id(column_id), .in_column(in_column), .CLK(CLK), .IN_CLR(IN_CLR), .LOAD(LOAD), .RESET(RESET), .column_seg(column_seg), .out_column(out_column), .COLUMN_CLK(COLUMN_CLK), .OUT_CLR(OUT_CLR));
 endmodule

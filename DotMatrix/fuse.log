@@ -1,21 +1,23 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST_isim_beh.exe -prj C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST_beh.prj work.matrixTEST work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/ohike/Studying/Verilog/DotMatrix/MainTEst_isim_beh.exe -prj C:/Users/ohike/Studying/Verilog/DotMatrix/MainTEst_beh.prj work.MainTEst work.glbl 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/Divider.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/Matrix.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/DotMatrix/Divider.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/DotMatrix/Matrix.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/DotMatrix/Main.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/DotMatrix/MainTEst.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling module Divider
 Compiling module Matrix
-Compiling module matrixTEST
+Compiling module Main
+Compiling module MainTEst
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 4 Verilog Units
-Built simulation executable C:/Users/kumomomo/Studying/5J/Verilog/DotMatrix/matrixTEST_isim_beh.exe
-Fuse Memory Usage: 28652 KB
-Fuse CPU Usage: 483 ms
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/ohike/Studying/Verilog/DotMatrix/MainTEst_isim_beh.exe
+Fuse Memory Usage: 28972 KB
+Fuse CPU Usage: 421 ms
