@@ -75,6 +75,7 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 
 	assign OUT_CLR = (IN_CLR | RESET);
 	assign COLUMN_CLK = status;
+	assign out_column = drawing_column_pattern;
 	Divider divider(.CLK(CLK), .CLK_OUT(Divided_CLK));
 
 	always @ (posedge LOAD or posedge RESET) begin
@@ -130,7 +131,6 @@ module Matrix(column_id, in_column, CLK, IN_CLR, LOAD, RESET, column_seg, out_co
 		end
 	end
 
-	assign out_column = drawing_column_pattern;
 
 	always @ (posedge Divided_CLK) begin
 			status <= ~status;

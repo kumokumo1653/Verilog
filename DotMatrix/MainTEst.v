@@ -59,13 +59,16 @@ module MainTEst;
 		LOAD = 0;
 		RESET = 0;
 
+		#30000 RESET = 1;
+		#100 RESET = 0;
 	end
 	always #1 begin
 		CLK = ~CLK;
 	end
 	
-	always #10000 begin
+	always #1000 begin
 		LOAD = ~LOAD;
 	end
+	
 endmodule
 

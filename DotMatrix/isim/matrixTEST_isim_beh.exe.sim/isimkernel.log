@@ -2,29 +2,32 @@ Command line:
    matrixTEST_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  61607
+     -socket  53021
 
-Tue Jun 29 10:43:58 2021
+Fri Jul 02 09:42:15 2021
 
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5153.12 Meg
+ Current Memory Usage: 5153.1 Meg
 
  Total Signals          : 28
  Total Nets             : 61
  Total Signal Drivers   : 16
  Total Blocks           : 5
  Total Primitive Blocks : 3
- Total Processes        : 23
+ Total Processes        : 24
  Total Traceable Variables  : 36
  Total Scalar Nets and Variables : 726
-Total Line Count : 146
-Total Line Count : 146
+Total Line Count : 150
+Total Line Count : 150
+Total Line Count : 150
+Total Line Count : 150
+Total Line Count : 150
 
- Total Simulation Time: 5.29688 sec
+ Total Simulation Time: 703.75 sec
 
- Current Memory Usage: 5467.7 Meg
+ Current Memory Usage: 4681.24 Meg
 
-Tue Jun 29 10:44:43 2021
+Fri Jul 02 09:55:38 2021
 

@@ -36,23 +36,24 @@ Setup/Hold to clock LOAD
              |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 -------------+------------+------------+------------+------------+------------------+--------+
-RESET        |    7.811(R)|      SLOW  |   -1.029(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<0> |    4.952(R)|      SLOW  |   -1.304(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<1> |    4.428(R)|      SLOW  |   -0.604(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<2> |    4.771(R)|      SLOW  |   -0.641(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<3> |    3.958(R)|      SLOW  |   -0.532(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<4> |    4.357(R)|      SLOW  |   -0.537(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<5> |    4.213(R)|      SLOW  |   -0.536(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<6> |    4.325(R)|      SLOW  |   -0.464(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<7> |    5.271(R)|      SLOW  |   -1.310(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<8> |    4.736(R)|      SLOW  |   -0.763(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<9> |    4.394(R)|      SLOW  |   -0.640(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<10>|    3.865(R)|      SLOW  |   -0.563(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<11>|    4.427(R)|      SLOW  |   -0.678(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<12>|    4.516(R)|      SLOW  |   -0.736(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<13>|    4.546(R)|      SLOW  |   -1.112(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<14>|    4.614(R)|      SLOW  |   -0.928(R)|      FAST  |LOAD_BUFGP        |   0.000|
-in_column<15>|    4.337(R)|      SLOW  |   -0.342(R)|      SLOW  |LOAD_BUFGP        |   0.000|
+RESET        |    8.685(R)|      SLOW  |   -1.108(R)|      FAST  |LOAD_BUFGP        |   0.000|
+             |    6.657(F)|      SLOW  |   -2.159(F)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<0> |    5.403(R)|      SLOW  |   -1.161(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<1> |    4.450(R)|      SLOW  |   -0.627(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<2> |    4.019(R)|      SLOW  |   -0.573(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<3> |    3.973(R)|      SLOW  |   -0.387(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<4> |    3.811(R)|      SLOW  |   -0.659(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<5> |    3.933(R)|      SLOW  |   -0.956(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<6> |    4.070(R)|      SLOW  |   -0.577(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<7> |    5.257(R)|      SLOW  |   -1.424(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<8> |    4.429(R)|      SLOW  |   -0.794(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<9> |    4.409(R)|      SLOW  |   -0.656(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<10>|    4.147(R)|      SLOW  |   -0.789(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<11>|    3.877(R)|      SLOW  |   -0.724(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<12>|    4.556(R)|      SLOW  |   -0.738(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<13>|    4.614(R)|      SLOW  |   -1.124(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<14>|    4.247(R)|      SLOW  |   -0.796(R)|      FAST  |LOAD_BUFGP        |   0.000|
+in_column<15>|    3.749(R)|      SLOW  |   -0.505(R)|      FAST  |LOAD_BUFGP        |   0.000|
 -------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -68,19 +69,19 @@ Clock to Setup on destination clock LOAD
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-LOAD           |    3.276|    2.686|         |    4.066|
+LOAD           |    3.468|    3.014|         |    3.860|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-IN_CLR         |OUT_CLR        |   12.791|
-RESET          |OUT_CLR        |   13.799|
+IN_CLR         |OUT_CLR        |   13.156|
+RESET          |OUT_CLR        |   14.976|
 ---------------+---------------+---------+
 
 
-Analysis completed TUE 29 JUN 10:55:23 2021 
+Analysis completed FRI 9 JUL 9:30:7 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

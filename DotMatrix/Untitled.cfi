@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE            06/29/2021 - 10:56
+DATE            07/09/2021 - 09:31
 SOURCE          C:\Users\ohike\Studying\Verilog\DotMatrix\Untitled.mcs
 DEVICE          XCF04S
 DATA_WIDTH      8
 FILL_DATA       0xFF
-SIGNATURE       0x02E4E7CE
+SIGNATURE       0x02E4F6C8
 START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit" 6slx9tqg144

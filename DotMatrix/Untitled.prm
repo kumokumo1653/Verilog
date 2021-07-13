@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o C:\Users\ohike\Studying\Verilog\DotMatrix\//Untitled -x xcf04s -u 00000000 C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit 
 
-PROM C:\Users\ohike\Studying\Verilog\DotMatrix\Untitled.prm map: TUE 29 JUN 10:56:18 2021
+PROM C:\Users\ohike\Studying\Verilog\DotMatrix\Untitled.prm map: FRI 9 JUL 9:31:7 2021
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          512K
 PROM start    0000:0000
 PROM end      0007:ffff
-PROM checksum 02e4e7ce
+PROM checksum 02e4f6c8
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:327b     Jun 29 10:55:31 2021 C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit
+    0000:0000    0005:327b     Jul 09 09:30:15 2021 C:/Users/ohike/Studying/Verilog/DotMatrix/main.bit
