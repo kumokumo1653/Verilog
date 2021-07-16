@@ -1,7 +1,0 @@
-verilog work "Switcher.v"
-verilog work "Selector.v"
-verilog work "OutputSeletor.v"
-verilog work "IndexSelector.v"
-verilog work "DividerForDynamicLighting.v"
-verilog work "Decoder.v"
-verilog work "Main.v"

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\fjsda\Studying\FPGA\HalfAdder\HalfAdder.ncd
-OUTFILE=C:\Users\fjsda\Studying\FPGA\HalfAdder\HalfAdder.bit
-FAMILY=Spartan6
-PART=xc6slx9-2tqg144
-WORKINGDIR=C:\Users\fjsda\Studying\FPGA\HalfAdder
-LICENSE=WebPack
-USER_INFO=212047354_0_0_835

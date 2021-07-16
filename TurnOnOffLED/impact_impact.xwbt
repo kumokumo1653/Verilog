@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\Users\fjsda\Studying\FPGA\TurnOnOffLED\impact.xsl
-OUTFILE=C:\Users\fjsda\Studying\FPGA\TurnOnOffLED\impact.xsl
-FAMILY=Multiple
-PART=Multiple
-WORKINGDIR=C:\Users\fjsda\Studying\FPGA\TurnOnOffLED
-LICENSE=iMPACT
-USER_INFO=iMPACT

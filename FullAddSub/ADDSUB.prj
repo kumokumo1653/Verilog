@@ -1,5 +1,0 @@
-verilog work "HalfSUB.v"
-verilog work "HalfADD.v"
-verilog work "FullSUB.v"
-verilog work "FullADD.v"
-verilog work "ADDSUB.v"

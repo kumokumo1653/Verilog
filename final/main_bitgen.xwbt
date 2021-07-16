@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\wasabi\Desktop\temp\final\final\main.ncd
-OUTFILE=C:\Users\wasabi\Desktop\temp\final\final\main.bit
-FAMILY=Spartan6
-PART=xc6slx4-2tqg144
-WORKINGDIR=C:\Users\wasabi\Desktop\temp\final\final
-LICENSE=WebPack
-USER_INFO=212068234_0_0_339

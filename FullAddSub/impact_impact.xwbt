@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\Users\fjsda\Studying\FPGA\FullAddSub\impact.xsl
-OUTFILE=C:\Users\fjsda\Studying\FPGA\FullAddSub\impact.xsl
-FAMILY=Multiple
-PART=Multiple
-WORKINGDIR=C:\Users\fjsda\Studying\FPGA\FullAddSub
-LICENSE=iMPACT
-USER_INFO=iMPACT

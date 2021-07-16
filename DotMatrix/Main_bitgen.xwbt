@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\ohike\Studying\Verilog\DotMatrix\Main.ncd
-OUTFILE=C:\Users\ohike\Studying\Verilog\DotMatrix\Main.bit
-FAMILY=Spartan6
-PART=xc6slx9-2tqg144
-WORKINGDIR=C:\Users\ohike\Studying\Verilog\DotMatrix
-LICENSE=WebPack
-USER_INFO=212047354_0_0_655

@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\Users\fjsda\Studying\FPGA\SevenSegment\impact.xsl
-OUTFILE=C:\Users\fjsda\Studying\FPGA\SevenSegment\impact.xsl
-FAMILY=Multiple
-PART=Multiple
-WORKINGDIR=C:\Users\fjsda\Studying\FPGA\SevenSegment
-LICENSE=iMPACT
-USER_INFO=iMPACT
