@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/kumomomo/Studying/5J/Verilog/i4001/romTest_isim_beh.exe" -prj "C:/Users/kumomomo/Studying/5J/Verilog/i4001/romTest_beh.prj" "work.romTest" "work.glbl" 

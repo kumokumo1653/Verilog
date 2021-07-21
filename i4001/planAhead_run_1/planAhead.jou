@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Jul 21 19:27:13 2021
+# Process ID: 3128
+# Log file: C:/Users/kumomomo/Studying/5J/Verilog/i4001/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/kumomomo/Studying/5J/Verilog/i4001/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/kumomomo/Studying/5J/Verilog/i4001/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS33 [get_ports [list {dmd_column[15]} {dmd_column[14]} {dmd_column[13]} {dmd_column[12]} {dmd_column[11]} {dmd_column[10]} {dmd_column[9]} {dmd_column[8]} {dmd_column[7]} {dmd_column[6]} {dmd_column[5]} {dmd_column[4]} {dmd_column[3]} {dmd_column[2]} {dmd_column[1]} {dmd_column[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {dmd_seg[3]} {dmd_seg[2]} {dmd_seg[1]} {dmd_seg[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {in[15]} {in[14]} {in[13]} {in[12]} {in[11]} {in[10]} {in[9]} {in[8]} {in[7]} {in[6]} {in[5]} {in[4]} {in[3]} {in[2]} {in[1]} {in[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {seg_digit[3]} {seg_digit[2]} {seg_digit[1]} {seg_digit[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {seg_pattern[7]} {seg_pattern[6]} {seg_pattern[5]} {seg_pattern[4]} {seg_pattern[3]} {seg_pattern[2]} {seg_pattern[1]} {seg_pattern[0]}]]
+set_property package_pin "" [get_ports [list  {dmd_column[14]}]]
+startgroup
+set_property package_pin P67 [get_ports {dmd_column[15]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {dmd_column[14]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {dmd_column[13]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {dmd_column[12]}]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports {dmd_column[11]}]
+endgroup
+startgroup
+set_property package_pin P64 [get_ports {dmd_column[10]}]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports {dmd_column[9]}]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports {dmd_column[7]}]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports {dmd_column[8]}]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports {dmd_column[7]}]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports {dmd_column[6]}]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports {dmd_column[5]}]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports {dmd_column[4]}]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports {dmd_column[3]}]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports {dmd_column[2]}]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports {dmd_column[1]}]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports {dmd_column[0]}]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports {dmd_seg[3]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {dmd_seg[2]}]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports {dmd_seg[1]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {dmd_seg[0]}]
+endgroup
+startgroup
+set_property package_pin P92 [get_ports {dmd_seg[1]}]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports {dmd_seg[0]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {in[15]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {in[14]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {in[13]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {in[12]}]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports {in[11]}]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports {in[10]}]
+endgroup
+startgroup
+set_property package_pin P38 [get_ports {in[9]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {in[8]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {in[7]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {in[6]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {in[5]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {in[4]}]
+endgroup
+set_property package_pin "" [get_ports [list  {in[3]}]]
+set_property package_pin "" [get_ports [list  {in[1]}]]
+startgroup
+set_property package_pin P88 [get_ports {in[3]}]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports {in[2]}]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports {in[1]}]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports {in[0]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {seg_digit[3]}]
+endgroup
+startgroup
+set_property package_pin P116 [get_ports {seg_digit[2]}]
+endgroup
+startgroup
+set_property package_pin P118 [get_ports {seg_digit[1]}]
+endgroup
+startgroup
+set_property package_pin P124 [get_ports {seg_digit[0]}]
+endgroup
+startgroup
+set_property package_pin P126 [get_ports {seg_pattern[7]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {seg_pattern[6]}]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports {seg_pattern[5]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {seg_pattern[4]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {seg_pattern[3]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports {seg_pattern[2]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {seg_pattern[1]}]
+endgroup
+startgroup
+set_property package_pin P115 [get_ports {seg_pattern[0]}]
+endgroup
+startgroup
+set_property package_pin P94 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports DMD_CLK]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports DMD_CLR]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports MCLK]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin P50 [get_ports SWITCH]
+endgroup
+save_constraints
+set_property iostandard LVCMOS33 [get_ports [list CLK]]
+set_property iostandard LVCMOS33 [get_ports [list DMD_CLK]]
+set_property iostandard LVCMOS33 [get_ports [list DMD_CLR]]
+set_property iostandard LVCMOS33 [get_ports [list MCLK]]
+set_property iostandard LVCMOS33 [get_ports [list RESET]]
+set_property iostandard LVCMOS33 [get_ports [list SWITCH]]
+save_constraints

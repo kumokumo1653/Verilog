@@ -22,7 +22,7 @@ module i4001(CLK, WE, address, in, out);
 	input CLK, WE;
 	input [6:0]address;
 	input [15:0]in;
-	input [15:0]out;
+	output [15:0]out;
 	BlockRam4001 ram(.clka(CLK), .wea(WE), .addra(address), .dina(in), .douta(out));
 	//アドレス変化でそのアドレスの中身をoutに出力
 	//weが1なら書き込みも行う
