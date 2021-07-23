@@ -64,12 +64,12 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
             ENTER <= 1;
         end
         //mode run
-        else if(in[15] == 0) begin
+        else if(SWITCH == 1 && in[15] == 0) begin
             mode <= 1;
             ENTER <= 0;
         end
         //mode ddebug
-        else begin
+        else if(SWITCH == 1 && in[15] == 1)begin
             mode <= 2;
             ENTER <= 0;
         end
@@ -139,5 +139,5 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
     //matrix column_id, load, in_column
     Rom rom(.CLK(ROM_CLK), .column_id(rom_column_id), .read_id(read_id), .in(in), .out(rom_output), .mode(mode));
     Segment7 seg7(.CLK(CLK), .IN_CLR(1'b1), .D1(seg_d1), .D2(seg_d2), .D3(seg_d3), .D4(seg_d4), .PATTERN(seg_pattern), .DIGIT(seg_digit));
-    Matrix matrix(.column_id(dmd_in_column), .in_column(dmd_in), .CLK(CLK), .IN_CLR(1'b1), .LOAD(MCLK & ENTER), .RESET(1'b0), .column_seg(dmd_seg), .out_column(dmd_column), .COLUMN_CLK(DMD_CLK), .OUT_CLR(DMD_CLR));
+    Matrix matrix(.column_id(dmd_in_column), .in_column(dmd_in), .CLK(CLK), .IN_CLR(1'b0), .LOAD(MCLK & ENTER), .RESET(1'b0), .column_seg(dmd_seg), .out_column(dmd_column), .COLUMN_CLK(DMD_CLK), .OUT_CLR(DMD_CLR));
 endmodule

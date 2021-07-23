@@ -4,6 +4,8 @@ xcf04s          [4 M]
 Auto Select Storage Device
 FF
 Untitled
-C:\Users\ohike\Studying\Verilog\DotMatrix\
+C:/Users/ohike/Studying/Verilog/i4001
+
+MCS
 
 MCS

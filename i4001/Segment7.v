@@ -78,7 +78,7 @@ module Segment7(CLK, IN_CLR, D1, D2, D3, D4, PATTERN, DIGIT);
 	
 	
 	
-	Divider divider(.CLK(CLK), .CLK_OUT(DIVIDED_CLK));
+	Seg7Divider seg7divider(.CLK(CLK), .CLK_OUT(DIVIDED_CLK));
 	
 	function [1:0]selector;
 		input [3:0]in;

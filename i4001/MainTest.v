@@ -57,7 +57,7 @@ module MainTest;
 	initial begin
 		// Initialize Inputs
 		CLK = 0;
-		in = 0;
+		in = 16'b0000_0000_0000_0000;
 		MCLK = 0;
 		SWITCH = 0;
 		RESET = 0;
@@ -66,11 +66,16 @@ module MainTest;
 		
         
 		// Add stimulus here
-
+		#100000 MCLK = ~MCLK;
+		in = in + 16'b0000_0000_0000_0001;
 	end
      
 	always begin
-		#10 CLK = ~CLK;
+		#1 CLK = ~CLK;
 	end
+	
+		
+
+		
 endmodule
 
