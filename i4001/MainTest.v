@@ -68,6 +68,9 @@ module MainTest;
 		// Add stimulus here
 		#100000 MCLK = ~MCLK;
 		in = in + 16'b0000_0000_0000_0001;
+		#100 MCLK = ~MCLK;
+		#100000 MCLK = ~MCLK;
+		in = in + 16'b0000_0000_0000_0001;
 	end
      
 	always begin

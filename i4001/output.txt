@@ -4,6 +4,9 @@ xcf04s          [4 M]
 Auto Select Storage Device
 FF
 Untitled
-C:\Users\kumomomo\Studying\5J\Verilog\i4001/
+C:\Users\kumomomo\Studying\5J\Verilog\i4001\
+
+MCS
+
 
 MCS
