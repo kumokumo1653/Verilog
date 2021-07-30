@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/kumomomo/Studying/5J/Verilog/i4001/Rom.v";
+static const char *ng0 = "C:/Users/ohike/Studying/Verilog/i4001/Rom.v";
 
 
 

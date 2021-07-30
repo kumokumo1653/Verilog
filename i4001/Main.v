@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_seg, dmd_column, DMD_CLK);
+	module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_seg, dmd_column, DMD_CLK);
     input CLK, MCLK, SWITCH, RESET;
     input [15:0] in;//sw1--sw16
     output [7:0]seg_pattern;
@@ -45,6 +45,7 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
 
     wire [15:0]dmd_in;
     wire [4:0]dmd_in_column;
+	 wire DMD_LOAD;
     wire ENTER;
 
     wire ROM_CLK;
@@ -54,6 +55,7 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
     assign rom_column_id = (mode == 0) ? input_column_id: debug_column_id;
     assign dmd_in = (mode == 0) ? in: rom_output;
     assign dmd_in_column = (mode == 0) ? input_column_id[4:0]: debug_column_id[4:0];
+	 assign DMD_LOAD = (mode == 0) ? MCLK : CLK;
     assign ROM_CLK = (mode == 0) ? MCLK : CLK;
 
     assign seg_d1 = (mode == 0) ? input_page[3:0] : debug_page[3:0];
@@ -64,7 +66,7 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
 
     always @ (negedge CLK) begin
         if(mode == 1 || mode == 2)begin
-				 if(debug_page * 32 <= debug_column_id && (debug_page + 1) * 32 > debug_column_id)begin
+				 if(debug_page * 32 <= debug_column_id && (debug_page + 1) * 32 - 1 > debug_column_id)begin
 					  debug_column_id <= debug_column_id + 11'b00000000001;
 				 end else begin
 					  debug_column_id <= debug_page * 32;
@@ -122,5 +124,5 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
     //matrix column_id, load, in_column
     Rom rom(.CLK(ROM_CLK), .column_id(rom_column_id), .read_id(read_id), .in(in), .out(rom_output), .mode(mode));
     Segment7 seg7(.CLK(CLK), .IN_CLR(1'b1), .D1(seg_d1), .D2(seg_d2), .D3(seg_d3), .D4(seg_d4), .PATTERN(seg_pattern), .DIGIT(seg_digit));
-    Matrix matrix(.column_id(dmd_in_column), .in_column(dmd_in), .CLK(CLK), .IN_CLR(1'b0), .LOAD(MCLK), .RESET(DMD_RESET), .column_seg(dmd_seg), .out_column(dmd_column), .COLUMN_CLK(DMD_CLK), .OUT_CLR(DMD_CLR));
+    Matrix matrix(.column_id(dmd_in_column), .in_column(dmd_in), .CLK(CLK), .IN_CLR(1'b0), .LOAD(DMD_LOAD), .RESET(DMD_RESET), .column_seg(dmd_seg), .out_column(dmd_column), .COLUMN_CLK(DMD_CLK), .OUT_CLR(DMD_CLR));
 endmodule

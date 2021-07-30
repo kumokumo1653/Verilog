@@ -1,18 +1,18 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/kumomomo/Studying/5J/Verilog/i4001/MainTest_isim_beh.exe -prj C:/Users/kumomomo/Studying/5J/Verilog/i4001/MainTest_beh.prj work.MainTest work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/ohike/Studying/Verilog/i4001/MainTest_isim_beh.exe -prj C:/Users/ohike/Studying/Verilog/i4001/MainTest_beh.prj work.MainTest work.glbl 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/ipcore_dir/BlockRam4001.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/SelectorRom.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/Seg7Divider.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/MatrixDivider.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/i4001.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/segment7.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/Rom.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/Matrix.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/Main.v" into library work
-Analyzing Verilog file "C:/Users/kumomomo/Studying/5J/Verilog/i4001/MainTest.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/ipcore_dir/BlockRam4001.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/SelectorRom.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/Seg7Divider.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/MatrixDivider.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/i4001.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/segment7.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/Rom.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/Matrix.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/Main.v" into library work
+Analyzing Verilog file "C:/Users/ohike/Studying/Verilog/i4001/MainTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
@@ -32,8 +32,8 @@ Compiling module Main
 Compiling module MainTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 8 sub-compilation(s) to finish...
 Compiled 15 Verilog Units
-Built simulation executable C:/Users/kumomomo/Studying/5J/Verilog/i4001/MainTest_isim_beh.exe
-Fuse Memory Usage: 33256 KB
-Fuse CPU Usage: 796 ms
+Built simulation executable C:/Users/ohike/Studying/Verilog/i4001/MainTest_isim_beh.exe
+Fuse Memory Usage: 34092 KB
+Fuse CPU Usage: 608 ms

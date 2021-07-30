@@ -1,9 +1,9 @@
 PROMGEN: Xilinx Prom Generator P.20131013
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-promgen -w -p mcs -c FF -o C:\Users\kumomomo\Studying\5J\Verilog\i4001\//Untitled -x xcf04s -u 00000000 C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit 
+promgen -w -p mcs -c FF -o C:\Users\ohike\Studying\Verilog\i4001//Untitled -x xcf04s -u 00000000 C:/Users/ohike/Studying/Verilog/i4001/main.bit 
 
-PROM C:\Users\kumomomo\Studying\5J\Verilog\i4001\Untitled.prm map: MON 26 JUL 21:33:6 2021
+PROM C:\Users\ohike\Studying\Verilog\i4001\Untitled.prm map: FRI 30 JUL 10:9:40 2021
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          512K
 PROM start    0000:0000
 PROM end      0007:ffff
-PROM checksum 03064e1d
+PROM checksum 02ec1cd0
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:35bb     Jul 26 21:32:02 2021 C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit
+    0000:0000    0005:34a7     Jul 30 10:08:19 2021 C:/Users/ohike/Studying/Verilog/i4001/main.bit
