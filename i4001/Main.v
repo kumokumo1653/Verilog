@@ -28,6 +28,7 @@
     output [15:0]dmd_column;
 
     wire [1:0]mode;//0...input 1...run 2...debug
+	reg [1:0] cnt = 2'b00;
     reg [10:0]input_column_id = 11'b00000000000;
     reg [10:0]debug_column_id = 11'b00000000000;
     wire [10:0]rom_column_id;
@@ -35,7 +36,7 @@
     reg [7:0] input_page = 8'b0000_0000;
     reg [7:0] debug_page = 8'b0000_0000;
 	 
-	 reg DMD_RESET = 0;
+	reg DMD_RESET = 0;
     wire [15:0] rom_output;
 
     wire [3:0]seg_d1;
@@ -45,18 +46,21 @@
 
     wire [15:0]dmd_in;
     wire [4:0]dmd_in_column;
-	 wire DMD_LOAD;
+	wire DMD_LOAD;
     wire ENTER;
 
     wire ROM_CLK;
+	reg DEBUG_COLUMN_CLK = 0;
+	reg DEBUG_ROM_CLK = 0;
+	reg DEBUG_DMD_CLK = 0;
     
-	 assign mode = (SWITCH == 0) ? 0 : (in[15] == 0) ? 1 : 2;
-	 assign ENTER = (mode == 0) ? 1 : 0;
+	assign mode = (SWITCH == 0) ? 0 : (in[15] == 0) ? 1 : 2;
+	assign ENTER = (mode == 0) ? 1 : 0;
     assign rom_column_id = (mode == 0) ? input_column_id: debug_column_id;
     assign dmd_in = (mode == 0) ? in: rom_output;
     assign dmd_in_column = (mode == 0) ? input_column_id[4:0]: debug_column_id[4:0];
-	 assign DMD_LOAD = (mode == 0) ? MCLK : CLK;
-    assign ROM_CLK = (mode == 0) ? MCLK : CLK;
+	assign DMD_LOAD = (mode == 0) ? MCLK : DEBUG_DMD_CLK;
+    assign ROM_CLK = (mode == 0) ? MCLK : DEBUG_ROM_CLK;
 
     assign seg_d1 = (mode == 0) ? input_page[3:0] : debug_page[3:0];
     assign seg_d2 = (mode == 0) ? input_page[7:4] : debug_page[7:4];
@@ -64,7 +68,31 @@
     assign seg_d4 = 4'b0000;
 
 
-    always @ (negedge CLK) begin
+
+    always @ (posedge CLK) begin
+		if(cnt == 2'b11)begin
+			cnt <= 2'b00;
+		end else begin	
+			cnt <= cnt + 2'b01;
+		end
+		if(cnt == 2'b00)begin
+			DEBUG_COLUMN_CLK <= ~DEBUG_COLUMN_CLK;
+		end else if(cnt == 2'b01)begin
+			DEBUG_ROM_CLK <= ~DEBUG_ROM_CLK;
+		end else if(cnt == 2'b10)begin
+			DEBUG_DMD_CLK <= ~DEBUG_DMD_CLK;
+		end
+
+		if(input_column_id != 0 && (input_column_id) % 32 == 0)begin
+			DMD_RESET <= 1;
+		end
+		if((input_column_id) % 32 == 0)begin
+			DMD_RESET <= 0;
+		end
+	end
+
+
+    always @ (posedge DEBUG_COLUMN_CLK) begin
         if(mode == 1 || mode == 2)begin
 				 if(debug_page * 32 <= debug_column_id && (debug_page + 1) * 32 - 1 > debug_column_id)begin
 					  debug_column_id <= debug_column_id + 11'b00000000001;
@@ -76,21 +104,30 @@
         end
     end
 	 
-	always @ (negedge MCLK)begin
-		if(mode == 0)begin
-				input_column_id <= input_column_id + 11'b00000000001;
-				 if(input_column_id == 11'b11111111111)begin
-					  input_column_id <= 11'b00000000000;
-					  input_page <= 8'b0000_0000;
-				 end else begin
-					
-					if((input_column_id + 1) % 32 == 0)begin
-						input_page <= input_page + 8'b0000_0001;
+	always @ (negedge MCLK or posedge RESET)begin
+		if(RESET == 1)begin
+			if(mode == 0)begin
+				input_column_id <= 11'b00000000000;
+				input_page <= 8'b0000_0000;
+			end
+		end else begin
+			if(mode == 0)begin
+					input_column_id <= input_column_id + 11'b00000000001;
+					 if(input_column_id == 11'b11111111111)begin
+						  input_column_id <= 11'b00000000000;
+						  input_page <= 8'b0000_0000;
+					 end else begin
+						
+						if((input_column_id + 1) % 32 == 0)begin
+							input_page <= input_page + 8'b0000_0001;
 
-					end
-					  
-				 end	
-		end 
+						end
+						  
+					 end	
+					 
+						
+			end 
+		end
 	end
 	
 	always @(posedge MCLK)begin
