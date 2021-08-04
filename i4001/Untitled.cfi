@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE            08/03/2021 - 23:18
+DATE            08/04/2021 - 16:06
 SOURCE          C:\Users\kumomomo\Studying\5J\Verilog\i4001\Untitled.mcs
 DEVICE          XCF04S
 DATA_WIDTH      8
 FILL_DATA       0xFF
-SIGNATURE       0x02EDBB6F
-START_ADDRESS   0x00000000 END_ADDRESS 0x000534A7 DIRECTION_UP   "C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit" 6slx9tqg144
+SIGNATURE       0x02ED3CC7
+START_ADDRESS   0x00000000 END_ADDRESS 0x000535BB DIRECTION_UP   "C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit" 6slx9tqg144

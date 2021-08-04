@@ -83,10 +83,10 @@
 			DEBUG_DMD_CLK <= ~DEBUG_DMD_CLK;
 		end
 
-		if(input_column_id != 0 && (input_column_id) % 32 == 0)begin
+		if(RESET == 1)begin
 			DMD_RESET <= 1;
 		end
-		if((input_column_id) % 32 == 0)begin
+		if(RESET == 0)begin
 			DMD_RESET <= 0;
 		end
 	end

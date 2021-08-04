@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o C:\Users\kumomomo\Studying\5J\Verilog\i4001\//Untitled -x xcf04s -u 00000000 C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit 
 
-PROM C:\Users\kumomomo\Studying\5J\Verilog\i4001\Untitled.prm map: TUE 3 AUG 23:18:11 2021
+PROM C:\Users\kumomomo\Studying\5J\Verilog\i4001\Untitled.prm map: WED 4 AUG 16:6:13 2021
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          512K
 PROM start    0000:0000
 PROM end      0007:ffff
-PROM checksum 02edbb6f
+PROM checksum 02ed3cc7
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:34a7     Aug 03 23:02:15 2021 C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit
+    0000:0000    0005:35bb     Aug 04 15:28:03 2021 C:/Users/kumomomo/Studying/5J/Verilog/i4001/main.bit
