@@ -1,0 +1,31 @@
+Command line:
+   i4004test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57787
+
+Wed Sep 01 22:50:26 2021
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5182.83 Meg
+
+ Total Signals          : 2493
+ Total Nets             : 7557
+ Total Signal Drivers   : 968
+ Total Blocks           : 301
+ Total Primitive Blocks : 232
+ Total Processes        : 1169
+ Total Traceable Variables  : 5161
+ Total Scalar Nets and Variables : 325183
+Total Line Count : 6920
+Total Line Count : 6920
+Total Line Count : 6920
+
+ Total Simulation Time: 2176.02 sec
+
+ Current Memory Usage: 4710.97 Meg
+
+Wed Sep 01 23:34:10 2021
+

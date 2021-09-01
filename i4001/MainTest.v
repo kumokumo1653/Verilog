@@ -75,18 +75,19 @@ module MainTest;
 	integer i = 0;
 	always begin
 		if(i == 0)begin
-		#100000 MCLK = ~MCLK;
-		in = in + 16'b0000_0000_0000_0001;
-		#100 MCLK = ~MCLK;
-		end else begin
-			#1000 SWITCH = 1;
-			#100 SWITCH = 0;
+			#100000 MCLK = ~MCLK;
+			in = in + 16'b0000_0000_0000_0001;
+			#100 MCLK = ~MCLK;
 		end
-		if(in == 16'b0000_0000_0111_1111)begin
+		if(in == 16'b0000_0000_1111_1111)begin
 			i = 1;
-			//SWITCH = 1;
-			//in[15] = 0;
-			//in[13] = 1;
+			SWITCH = 1;
+			in[15] = 0;
+			in[13] = 1;
+			#100000 MCLK = ~MCLK;
+			#100000 MCLK = ~MCLK;
+			#100 in[13] = 0;
+			#100 SWITCH = 1;
 			
 		end
 	end
