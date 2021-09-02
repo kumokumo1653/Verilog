@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/kumomomo/Studying/5J/Verilog/i4001/i4004test_isim_beh.exe" -prj "C:/Users/kumomomo/Studying/5J/Verilog/i4001/i4004test_beh.prj" "i4004test" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/kumomomo/Studying/5J/Verilog/i4001/i4004test_isim_beh.exe" -prj "C:/Users/kumomomo/Studying/5J/Verilog/i4001/i4004test_beh.prj" "work.i4004test" "work.glbl" 

@@ -91,7 +91,10 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
 	reg INCREMENT_FLAG = 1;
 	reg [3:0]temp = 4'b0000;
 	reg [2:0] multi_instruction_mask = 3'b000; //[0]...ISZ[1]...JUN[2]...JCN;
-	wire [2:0] condition_mask; //c2--c4の条件の判定c1==0のと�
+	//wire [2:0] condition_mask; //c2--c4の条件の判定c1==0のと�
+	wire c2;
+	wire c3;
+	wire c4;
     
 	assign mode = (SWITCH == 0) ? 0 : (in[15] == 1) ? 1 : 2;
 	assign ENTER = (mode == 0) ? 1 : 0;
@@ -113,8 +116,10 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
 	assign instruction = (program_counter[0] == 0) ? byteSwap(rom_output[7:0]) : byteSwap(rom_output[15:8]);
 	assign opr = instruction[7:4];
 	assign opa = instruction[3:0];
-	assign condition_mask = {(accumulator == 4'b0000) ? 1 : 0, (carry == 1) ? 1 : 0, (in[12] == 0) ? 1 : 0};
-
+	//assign condition_mask = {(accumulator == 4'b0000) ? 1 : 0, (carry == 1) ? 1 : 0, (in[12] == 0) ? 1 : 0};
+	assign c2 = (accumulator == 4'b0000) ? 1 : 0;
+	assign c3 = (carry == 1) ? 1 : 0;
+	assign c4 = (in[12] == 0) ? 1 : 0;
 
     always @ (posedge CLK) begin
 		if(cnt == 2'b11)begin
@@ -310,14 +315,14 @@ module Main(CLK, in, MCLK, SWITCH, RESET, seg_pattern, seg_digit, DMD_CLR, dmd_s
 						end else begin 
 							//second8bit
 							if(temp[3] == 0)begin
-								if(temp[2:0] & condition_mask == 3'b000)begin
+								if((temp[2:0] & {c2,c3,c4}) == 3'b000)begin
 									INCREMENT_FLAG <= 1;
 								end else begin
 									INCREMENT_FLAG <= 0;
 									program_counter[7:0] <= instruction;
 								end
 							end else begin
-								if((~temp[2:0]) & (~condition_mask) == 3'b000)begin
+								if((temp[2:0] & {~c2,~c3,~c4}) == 3'b000)begin
 									INCREMENT_FLAG <= 1;
 								end else begin
 									INCREMENT_FLAG <= 0;
